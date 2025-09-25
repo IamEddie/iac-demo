@@ -6,11 +6,11 @@ terraform {
       version = "~> 5.0"
     }
   }
-  backend "s3" {
-    bucket         = "s3state-remote-backend"
-    key            = "global/s3/terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "dynamodb-tfstate-locking"
-    encrypt        = true
-  }
+  # backend "s3" {
+  #   bucket         = "s3state-remote-backend"
+  #   key            = "global/s3/terraform.tfstate"
+  #   region         = "us-east-1"
+  #   dynamodb_table = "dynamodb-tfstate-locking"
+  #   encrypt        = true
+  # }
 }

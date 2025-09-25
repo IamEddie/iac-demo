@@ -2,8 +2,14 @@ Task Implementation
 ===================
 - Overall implemetation, please see Architecture-overview.png attached
 - Added the provider block for selected cloud in this case AWS
-- Created an S3 bucket &a DynamoDB table for remote state and locking respectively
+- Created an S3 bucket &a DynamoDB table for remote state and locking respectively(as we are using local as this a demo, I have commented out the remote state which would be a bbest practice in a team and good state management)
 - S3 bucket enabled versioning for back-up
+
+Use the following commands
+==========================
+$ git clone the repository to your local
+- navigate into the iac-demo directory
+$ terraform init
 $ terraform fmt -recursive
 $ terraform validate
 
