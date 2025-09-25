@@ -9,8 +9,11 @@ Use the following commands
 ==========================
 $ git clone the repository to your local
 - navigate into the iac-demo directory
+
 $ terraform init
+
 $ terraform fmt -recursive
+
 $ terraform validate
 
 AI 
